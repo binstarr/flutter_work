@@ -20,8 +20,6 @@ import 'dart:isolate';
 void main(){
 
   print("................main isolate................");
-  // 새로운 isolate 생성하기 : spawn 함수를 사용하면 된다.
-  // 다트는 일급객체를 지원하는 언어입니다. 매개 변수로 함수를 전달할 수 있다.
   Isolate.spawn(doNewJobIsolate, "1번 너가 할일 청소");
   Isolate.spawn(doNewJobIsolate, "2번 너는 잠자기");
   Isolate.spawn(doNewJobIsolate, "3번 너는 집에 가기");

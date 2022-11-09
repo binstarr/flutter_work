@@ -19,10 +19,10 @@ void main() {
 }
 
 subIsolateProcess(SendPort sendPort){
-  Isolate.spawn((sendPort) {
-    for(var i = 1; i < 10000; i++){
+  Isolate.spawn((sendThis) {
+    for(var i = 1; i < 2; i++){
       print("i : $i동작 수행");
     }
-    sendPort.send("다른 작업자에 for문 동작 끝났어");
+    sendThis.send("다른 작업자에 for문 동작 끝났어");
   }, sendPort);
 }
