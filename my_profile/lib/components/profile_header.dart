@@ -20,7 +20,7 @@ class ProfileHeader extends StatelessWidget {
       width: 100,
       height: 100,
       child: CircleAvatar(
-        backgroundImage: AssetImage("assets/avatar.png"),
+        backgroundImage: AssetImage("assets/faker.png"),
       ),
     );
   }
@@ -30,20 +30,20 @@ class ProfileHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "부트캠프",
+          "이상혁",
           style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
           ),
         ),
         Text(
-          "프로그래머/초특급고수",
+          "프로게이머/GOAT",
           style: TextStyle(
             fontSize: 20,
           ),
         ),
         Text(
-          "벤츠타는 개발자",
+          "레전드",
           style: TextStyle(
             fontSize: 15,
           ),
